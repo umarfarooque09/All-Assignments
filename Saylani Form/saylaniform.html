@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 5em;
+            width: 25em;
+            margin-left: 34%;
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-left: 36%;
+            font-size: 2.1em;
+        }
+
+        h3 {
+            font-size: 1.7em;
+            margin-left: 25%;
+        }
+
+        span {
+            font-size: 1.1em;
+            display: block;
+            font-weight: 900;
+        }
+
+        option {
+            font-weight: 600;
+        }
+
+        input:focus {
+            outline: none;
+            border: 3px solid goldenrod;
+
+        }
+
+
+        fieldset {
+            background-color: rgb(165, 156, 156);
+            height: fit-content;
+            width: 45em;
+            margin-left: 22%;
+
+        }
+
+        .name input {
+            margin-left: 24.4%;
+            width: 19em;
+            height: 1.5em;
+        }
+
+
+        .fathername input {
+            width: 19em;
+            height: 1.5em;
+            margin-top: 15px;
+            margin-left: 17%;
+        }
+
+        .password input {
+            width: 19em;
+            height: 1.5em;
+            margin-top: 15px;
+            margin-left: 11.1em;
+        }
+
+        textarea {
+            margin-top: 15px;
+            margin-left: 11.9em;
+
+        }
+
+        div span {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+ div {
+            display: flex;
+        }
+
+       
+        .gender .male {
+            margin-left: 12.1em;
+        }
+
+       
+
+        .language .urdu {
+            margin-left: 10.4em;
+        }
+
+       
+
+        .dob input {
+            height: 1.5em;
+            margin-left: 13.5em;
+            width: 12em;
+        }
+
+        
+
+        .email input {
+            width: 19em;
+            height: 1.5em;
+            margin-left: 11em;
+        }
+
+        .email,
+        .city,
+        .hobbies,
+        .number,.dob,  .language, .gender {
+            margin-top: 15px;
+        }
+
+        .number input {
+            width: 19em;
+            height: 1.5em;
+            margin-left: 11.2em;
+        }
+
+        .city select {
+            width: 9em;
+            height: 1.8em;
+            margin-left: 13.5em;
+        }
+
+        .hobbies select {
+            margin-left: 11.8em;
+            width: 7em;
+        }
+
+        .picture {
+            margin-top: 20px;
+        }
+
+        .picture input {
+            margin-left: 6.6em;
+
+        }
+
+        .submit {
+            margin-top: 20px;
+            margin-left: 21em;
+            border:none;
+            border-radius: 30px;
+            height: 2.5em;
+            font-weight: 600;
+background-image: linear-gradient(rgb(116, 213, 226), rgb(116, 65, 117));
+           border-top: 2px solid rgb(116, 65, 117);
+           border-bottom: 2px solid rgb(116, 213, 226);
+           border-left:2px solid rgb(116, 213, 226) ;
+           border-right: 2px solid rgb(116, 65, 117);
+           width: 8em;
+        }
+
+        .div {
+            display: flex;
+            height: 5em;
+
+        }
+
+        .div p {
+            margin-top: 1.5em;
+        }
+        .address-div span{
+            margin-top: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Muhammad Umar Farooque</h1>
+        <h1>414302</h1>
+    </center>
+    <img src="66c3b359cebfc (2).jpg" alt="saylani logo">
+    <h2>Saylani Online Academy</h2>
+
+    <fieldset>
+        <h3>Student Registration Form</h3>
+        <form action="submit.html">
+            <span class="name">Name:<input type="text" placeholder="Name" required></span>
+            <span class="fathername">Father Name:<input type="text" placeholder="Father Name" required></span>
+            <span class="password">Password:<input type="password" placeholder=".........." minlength="5"
+                    maxlength="10"></span>
+            <div class="address-div"> <span class="Address">Address:</span><textarea name="Address" cols="32" rows="7"> Address
+            
+            </textarea></div>
+            <span class="gender">Gender:<input type="radio" name="gender" value="male" required class="male"> Male
+                <input type="radio" name="gender" value="female" required> Female</span>
+            <span class="language">Language:
+                <input type="radio" name="language" value="urdu" required class="urdu">Urdu
+                <input type="radio" name="language" value="english">English
+                <input type="radio" name="language" value="arabic">Arabic
+                <input type="radio" name="language" value="chinese">Chinese</span>
+            <span class="dob">DOB:<input type="date" name="dob" required></span>
+            <span class="email">Email Id: <input type="email" name="email" required placeholder="Email ID"></span>
+            <span class="number">Number: <input type="number" name="number" required placeholder="Mobile Number"></span>
+            <span class="city">City:
+                <select name="city">
+                    <option value="default" disabled selected>Select Yor City</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Sargodha">Sargodha</option>
+
+                </select></span>
+            <span class="hobbies">
+                <div class="div">
+                    <p>Hobbies:</p>
+                    <select name="hobbies" multiple>
+
+                        <option value="Cricket">Cricket</option>
+                        <option value="Football">Football</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Tennis">Tennis</option>
+                        <option value="Cricket">Cricket</option>
+                        <option value="Football">Football</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Tennis">Tennis</option>
+                    </select>
+            </span></div>
+            <span class="picture">Picture Uplload:<input type="file" name="file" value="file"></span>
+            <input type="submit" value="Submit Form" class="submit">
+
+        </form>
+
+    </fieldset>
+
+
+</body>
+
+</html>
